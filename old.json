@@ -1,0 +1,48 @@
+{
+    "name": "Alexander Eckardt",
+    "links": [
+        {
+            "label": "alexeckardt.ca",
+            "href": "https://alexeckardt.ca"
+        },
+        {
+            "label": "linkedin.com/in/alex-eckardt",
+            "href": "https://linkedin.com/in/alex-eckardt"
+        },
+        {
+            "label": "github.com/alexeckardt",
+            "href": "https://github.com/alexeckardt"
+        },
+        {
+            "label": "(226)-792-7255",
+            "href": ""
+        }
+    ],
+    "address": "16 Nithview Crt. New Hamburg, Ontario N3A 2H4",
+    
+    "education": [
+        {
+            "$type": "institution",
+
+            "name": "McMaster University",
+            "year": 3,
+            "degree": "Bachelor of Applied Science in Computer Science (Co-op)",
+
+            "gpa": "3.8",
+            "gpa_outof": "4",
+
+            "distinction": "(Dean's Honour List)",
+            "start": "2021/09/01",
+            "end": "2025/05/01",
+            "city": "Hamilton",
+            "state": "ON",
+            "country": "Canada"
+        },
+        {
+            "$type": "online_course",
+            "name": "Google: AI Essentials",
+            "module": ""
+        }
+    ]
+    
+}
