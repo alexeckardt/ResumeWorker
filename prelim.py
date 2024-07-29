@@ -3,34 +3,42 @@ from datetime import datetime
 import heapq
 import re
 import spacy
+import pyperclip
 
 LINELENGTH = 100
 
 sectionData = {}
 
-def generate_key_words_from_job(positionName, companyName):
+def prompt():
     
-    positionName = 'Senior Software Engineer'
-    jobDescription = ''
+    #     
+    # job_description = input('Paste Job Description in:\n').strip()
+    job_description = '''
+Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.
+Behind everything our users see online is the architecture built by the Technical Infrastructure team to keep it running. From developing and maintaining our data centers to building the next generation of Google platforms, we make Google's product portfolio possible. We're proud to be our engineers' engineers and love voiding warranties by taking things apart so we can rebuild them. We keep our networks up and running, ensuring our users have the best and fastest experience possible.
+With your technical expertise you will manage project priorities, deadlines, and deliverables. You will design, develop, test, deploy, maintain, and enhance software solutions.
+Google Cloud accelerates every organization's ability to digitally transform its business and industry. We deliver enterprise-grade solutions that leverage Google’s cutting-edge technology, and tools that help developers build more sustainably. Customers in more than 200 countries and territories turn to Google Cloud as their trusted partner to enable growth and solve their most critical business problems.
+The US base salary range for this full-time position is $161,000-$239,000 + bonus + equity + benefits. Our salary ranges are determined by role, level, and location. The range displayed on each job posting reflects the minimum and maximum target salaries for the position across all US locations. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training. Your recruiter can share more about the specific salary range for your preferred location during the hiring process.
+    '''
     
-    '''Pretend you are a HR manager incharge of hiring new computer science and software engineering candidates for a {POSITION NAME} position at your technology firm. 
-    To rank the viability of a candidate, you are going to go line by line of each resume's bullet point, using Python's Spacy
+    return f'''Pretend you are a HR manager incharge of hiring new computer science and software engineering candidates for a Software developer
+    positions at your technology firm. 
+To rank the viability of a candidate, you are going to go line by line of each resume's bullet point, using Python's Spacy
     library. What follows will be a job description of the position. Based on these requirements, 
     state approximately 10 key words that you would expect to score a high match, using Spacy, with an interviewable
-    candidate's resume. What follows is the job description: {JOB DESCRIPTION}'''
+    candidate's resume. Return results in one line, sepeated by commas. The following is the job descritpion. "{job_description}" '''
+
+
+def generate_key_words_from_job(positionName, companyName):
     
-    bestkeywords = [
-        "Information Retrieval",
-        "Distributed Computing",
-        "Large-Scale System Design",
-        "Networking",
-        "Data Storage",
-        "Security",
-        "Artificial Intelligence",
-        "Natural Language Processing",
-        "UI Design",
-        "Mobile Development",
-    ]
+    pyperclip.copy(prompt())
+    
+    
+    print('Copied Prompt to Clipboard.')
+    x = input('Paste Chat GPT Response here:')
+    
+    splits = x.split(',')
+    bestkeywords = [x.strip() for x in splits]
     
     return bestkeywords
 
@@ -41,6 +49,8 @@ def generate_key_words_from_job(positionName, companyName):
 class Ranker:
     
     def __init__(self):
+        
+        print('Loading SpaCy model')
         self.nlp = spacy.load('en_core_web_md')
         self.keywords = None
     
@@ -360,7 +370,8 @@ def orderBestBullets(bestBullets):
                 print(f'\t\t{item}')
                 
             
-    return data
+    # Sort & Passback
+    return sort_keys(sectionData, data)
 
 #
 #
@@ -416,7 +427,6 @@ def generateListSection(resumeContent, section, locationState):
     template = sec.get('latexCode')
     
     string = ''
-    
     # Go Over
     for subsection in check:
         
@@ -469,8 +479,24 @@ def generateListSection(resumeContent, section, locationState):
     #Out
     return string
 
+def sort_keys(original, new):
+    sorted_new_json = {}
+    
+    for section, subsection_dict in original.items():
+        if section in new:
+            original_subsections = [x.get('title') for x in subsection_dict["subsections"]]
+            new_section = new[section]
+            sorted_section = {}
+            for key in original_subsections:
+                if key in new_section:
+                    sorted_section[key] = new_section[key]
+            sorted_new_json[section] = sorted_section
+    
+    return sorted_new_json
+
 
 def createLatexDocument(string, resumeContent, locationState):
+  
         string = string.replace('$$$WORK EXPERIENCE$$$',generateListSection(resumeContent, 'work_experience', locationState))
         string = string.replace('$$$PROJECTS$$$', generateListSection(resumeContent, 'projects', locationState))
         

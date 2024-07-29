@@ -2,3 +2,5 @@
 /.venv
 /exports
 /template.tex
+/.env
+/test.py

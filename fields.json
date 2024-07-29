@@ -1,7 +1,7 @@
 {
     "work_experience": {
         "minimum_to_show": 2,
-        "latexCode" : "\\resumeSubheading\n{%TITLE}\n{%FROM -- %UNTIL}\n{\\href{%HREF}{%COMPANY}}{%LOCATION}",
+        "latexCode": "\\resumeSubheading\n{%TITLE}\n{%FROM -- %UNTIL}\n{\\href{%HREF}{%COMPANY}}{%LOCATION}",
         "subsections": [
             {
                 "title": "Business Intelligence Data Analyst",
@@ -160,7 +160,7 @@
     },
     "projects": {
         "minimum_to_show": 1,
-        "latexCode" : "\\resumeProjectHeading\n{\\href{%HREF}{\\underline{\\textbf{%TITLE}}} \n$|$ %DESCRIPTION}\n{%DATE}\n\n%This space needs to be here\n\\resumeProjectDescription{%TOOLS}",
+        "latexCode": "\\resumeProjectHeading\n{\\href{%HREF}{\\underline{\\textbf{%TITLE}}} \n$|$ %DESCRIPTION}\n{%DATE}\n\n%This space needs to be here\n\\resumeProjectDescription{%TOOLS}",
         "subsections": [
             {
                 "title": "Waterloo Hybrid Tech",
@@ -168,7 +168,6 @@
                 "description": "Online directory of over tech companies in Waterloo Region",
                 "date": "2024/01/01",
                 "tools": "(Beta) Google IDX, Gemini, Firebase, Supabase, Git, HTML, JavaScript",
-
                 "score_bias": 0.0,
                 "bullets": [
                     {
@@ -196,7 +195,7 @@
             },
             {
                 "title": "Pinball Pioneer",
-                "href":"https://alexeckardt.itch.io/pinball-pioneer",
+                "href": "https://alexeckardt.itch.io/pinball-pioneer",
                 "description": "Indie Video Game Winner of the GMTK 2023 Game Jam",
                 "date": "2024/07/01",
                 "tools": "GMS2, Aseprite, Git, Audacity, Web Design",
@@ -228,7 +227,7 @@
             },
             {
                 "title": "Soulflame (Alpha)",
-                "href":"https://alexeckardt.itch.io/soulflame-alpha",
+                "href": "https://alexeckardt.itch.io/soulflame-alpha",
                 "description": "Solo-developed Action Adventure Video Game",
                 "date": "Since June 2019",
                 "tools": "GMS2, Digital Art, Git, Social Media",
@@ -253,7 +252,7 @@
             },
             {
                 "title": "Titan Quest",
-                "href":"https://3023-titan-city-website.vercel.app/",
+                "href": "https://3023-titan-city-website.vercel.app/",
                 "description": "Submission for the NASA Space-Apps 2023 hackathon",
                 "date": "2023/10/01",
                 "tools": "Git, React, JavaScript, Video Editing, GML, Audio Editing",
@@ -281,7 +280,7 @@
             },
             {
                 "title": "GO Transit Visualizer",
-                "href":"https://alexeckardt.github.io/GO-Transit-Visualizer/",
+                "href": "https://alexeckardt.github.io/GO-Transit-Visualizer/",
                 "description": "Online Visualization Tool of Ontario's Bus and Train lines.",
                 "date": "2023/06/01",
                 "tools": "HTML, JavaScript, Python, Big Data",
@@ -297,6 +296,235 @@
                         "score_bias": 0.0,
                         "variants": [
                             "Used modular design to add touch-screen compatibility."
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "technical_skills": {
+        "subsections": [
+            {
+                "title": "Programming Languages",
+                "score_bias": 0.0,
+                "bullets": [
+                    {
+                        "score_bias": 0.05,
+                        "variants": [
+                            "Python"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.05,
+                        "variants": [
+                            "JavaScript"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "GML"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.03,
+                        "variants": [
+                            "HTML/CSS"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "\\LATEX"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "Java"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.01,
+                        "variants": [
+                            "C#"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.01,
+                        "variants": [
+                            "OpenGL"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "SQL"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "C/C++"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Development Tools",
+                "bullets": [
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "Azure"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "git/Github"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "AWS"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "Google Cloud"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "Firebase"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "Supabase"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "Framer"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "Docker"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "Figma"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "Jupyter"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Front End Frameworks",
+                "bullets": [
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "React"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "MUI"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "Bootstrap"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "Node.js"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "Astro"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "WordPress"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "SwaggerAPI"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "Lambda Functions"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Libraries",
+                "bullets": [
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "NumPy"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "Pandas"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "SQLite"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "Matplotlib"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "NLTK"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "scikit-learn"
                         ]
                     }
                 ]
