@@ -1,49 +1,41 @@
 from datetime import datetime
 import json
-from prelim import create_bullets_pq, createLatexDocument, generate_key_words_from_job, generateBestBullets, orderBestBullets
+from creator import create_resume_dict
+from generate_keywords import getKeywords
+from latex_generator import createLatexDocument
 
-def outResume(resumeOrdered, companyName, positionName, locationState):
+def outResume(resumeOrdered, inputData):
     
     with open('template.tex', 'r') as f:
         outString = f.read()
 
-    outString = createLatexDocument(outString, resumeOrdered, locationState)
+    outString = createLatexDocument(outString, resumeOrdered, inputData['locationState'])
     
     with open('./exports/Alexander Eckardt.tex', 'w') as f:
         f.write(outString)
         
-    with open(f'./exports/Backlog/{datetime.today().year}-{companyName}-{positionName}.tex', 'w') as f:
+    c = inputData['companyName']
+    p = inputData['positionName']
+    with open(f'./exports/Backlog/{datetime.today().year}-{c}-{p}.tex', 'w') as f:
         f.write(outString)
     
     
 
-
-
-
 def main():
-    
-    with open('fields.json', 'r') as f:
-        data = json.load(f)
-    
-    # Get Job Description
-    positionName = 'Software Developer'
-    companyName = 'Google'
-    locationState = 'in-state' #in-state, out-state, out-country
-    
-    
-    
-    bestkeywords = generate_key_words_from_job(positionName, companyName)
+
+    # Get
+    inputData = getKeywords()
 
     # Transform Json into scoring json
-    rankedBullets = create_bullets_pq(data, bestkeywords)    
+    resumeDict = create_resume_dict(inputData['bestkeywords'])
     
-    bestBullets = generateBestBullets(rankedBullets)
+    # bestBullets = generateBestBullets(rankedBullets)
     
-    resumeOrdered = orderBestBullets(bestBullets)
+    # resumeOrdered = orderBestBullets(bestBullets)
     
-    #
-    #
-    outResume(resumeOrdered, companyName, positionName, locationState)
+    # #
+    # #
+    outResume(resumeDict, inputData)
     
 if __name__ == '__main__':
     main()

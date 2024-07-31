@@ -1,0 +1,9 @@
+Pretend you are a HR manager incharge of hiring new computer science and software engineering candidates for a Software developer
+positions at your technology firm. 
+To rank the viability of a candidate, you are going to go line by line of each resume's bullet point, 
+using Python's Spacy library. What follows will be a ,
+job description of the position. Based on these requirements, 
+state approximately 10 key words that you would expect to score a high match, using ,
+Spacy, with an interviewable
+candidate's resume. Return results in one line, sepeated by commas. 
+The following is the job descritpion: "%JOBDESC"

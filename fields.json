@@ -1,7 +1,8 @@
 {
     "work_experience": {
         "minimum_to_show": 2,
-        "latexCode": "\\resumeSubheading\n{%TITLE}\n{%FROM -- %UNTIL}\n{\\href{%HREF}{%COMPANY}}{%LOCATION}",
+        "one_liner": false,
+        "latex_code": "\\resumeSubheading\n{%TITLE}\n{%FROM -- %UNTIL}\n{\\href{%HREF}{%COMPANY}}{%LOCATION}",
         "subsections": [
             {
                 "title": "Business Intelligence Data Analyst",
@@ -13,23 +14,18 @@
                 "state": "ON",
                 "country": "Canada",
                 "score_bias": 0.2,
-                "bullets": [
-                    {
-                        "variants": [
-                            "overall summary"
-                        ]
-                    },
+                "points": [
                     {
                         "variants": [
                             "Implemented several new critical systems for internal Policy Administration System to allow for the onboarding of over \\textbf{50} new client groups."
                         ],
-                        "score_bias": 0.05
+                        "score_bias": 0.10
                     },
                     {
                         "variants": [
                             "Responsible for the creation of Postgres database on \\textbf{AWS}, with the purpose of automating Report Creation for employee and client usage."
                         ],
-                        "score_bias": 0.05
+                        "score_bias": 0.10
                     },
                     {
                         "variants": [
@@ -54,7 +50,7 @@
                 "state": "ON",
                 "country": "Canada",
                 "score_bias": 0,
-                "bullets": [
+                "points": [
                     {
                         "score_bias": 0.02,
                         "variants": [
@@ -96,7 +92,7 @@
                 "state": "Zug",
                 "country": "Switzerland",
                 "score_bias": 0.3,
-                "bullets": [
+                "points": [
                     {
                         "score_bias": 0.05,
                         "variants": [
@@ -133,7 +129,7 @@
                 "state": "ON",
                 "country": "Canada",
                 "score_bias": 0,
-                "bullets": [
+                "points": [
                     {
                         "variants": [
                             "Assisted in the instruction of courses \\emph{Introduction to Programming} \\textbf{and} \\emph{Binding Algorithm Theory to Practice}."
@@ -160,7 +156,8 @@
     },
     "projects": {
         "minimum_to_show": 1,
-        "latexCode": "\\resumeProjectHeading\n{\\href{%HREF}{\\underline{\\textbf{%TITLE}}} \n$|$ %DESCRIPTION}\n{%DATE}\n\n%This space needs to be here\n\\resumeProjectDescription{%TOOLS}",
+        "one_liner": false,
+        "latex_code": "\\resumeProjectHeading\n{\\href{%HREF}{\\underline{\\textbf{%TITLE}}} \n$|$ %DESCRIPTION}\n{%DATE}\n\n%This space needs to be here\n\\resumeProjectDescription{%TOOLS}",
         "subsections": [
             {
                 "title": "Waterloo Hybrid Tech",
@@ -169,7 +166,7 @@
                 "date": "2024/01/01",
                 "tools": "(Beta) Google IDX, Gemini, Firebase, Supabase, Git, HTML, JavaScript",
                 "score_bias": 0.0,
-                "bullets": [
+                "points": [
                     {
                         "score_bias": 0.0,
                         "variants": [
@@ -200,7 +197,7 @@
                 "date": "2024/07/01",
                 "tools": "GMS2, Aseprite, Git, Audacity, Web Design",
                 "score_bias": 0.1,
-                "bullets": [
+                "points": [
                     {
                         "score_bias": 0.05,
                         "variants": [
@@ -232,7 +229,7 @@
                 "date": "Since June 2019",
                 "tools": "GMS2, Digital Art, Git, Social Media",
                 "score_bias": 0.0,
-                "bullets": [
+                "points": [
                     {
                         "score_bias": 0.02,
                         "variants": [
@@ -257,7 +254,7 @@
                 "date": "2023/10/01",
                 "tools": "Git, React, JavaScript, Video Editing, GML, Audio Editing",
                 "score_bias": 0.1,
-                "bullets": [
+                "points": [
                     {
                         "score_bias": 0.05,
                         "variants": [
@@ -285,7 +282,7 @@
                 "date": "2023/06/01",
                 "tools": "HTML, JavaScript, Python, Big Data",
                 "score_bias": 0.0,
-                "bullets": [
+                "points": [
                     {
                         "score_bias": 0.0,
                         "variants": [
@@ -303,11 +300,13 @@
         ]
     },
     "technical_skills": {
+        "one_liner": true,
+        "latex_code": "\t\t\\textbf{%SECTION}{: %LIST} \\\\\n",
         "subsections": [
             {
                 "title": "Programming Languages",
                 "score_bias": 0.0,
-                "bullets": [
+                "points": [
                     {
                         "score_bias": 0.05,
                         "variants": [
@@ -335,7 +334,7 @@
                     {
                         "score_bias": 0.0,
                         "variants": [
-                            "\\LATEX"
+                            "\\LaTeX"
                         ]
                     },
                     {
@@ -347,7 +346,7 @@
                     {
                         "score_bias": 0.01,
                         "variants": [
-                            "C#"
+                            "C\\#"
                         ]
                     },
                     {
@@ -372,7 +371,7 @@
             },
             {
                 "title": "Development Tools",
-                "bullets": [
+                "points": [
                     {
                         "score_bias": 0.0,
                         "variants": [
@@ -437,7 +436,7 @@
             },
             {
                 "title": "Front End Frameworks",
-                "bullets": [
+                "points": [
                     {
                         "score_bias": 0.0,
                         "variants": [
@@ -490,15 +489,15 @@
             },
             {
                 "title": "Libraries",
-                "bullets": [
+                "points": [
                     {
-                        "score_bias": 0.0,
+                        "score_bias": 0.3,
                         "variants": [
                             "NumPy"
                         ]
                     },
                     {
-                        "score_bias": 0.0,
+                        "score_bias": 0.3,
                         "variants": [
                             "Pandas"
                         ]
@@ -506,7 +505,9 @@
                     {
                         "score_bias": 0.0,
                         "variants": [
-                            "SQLite"
+                            "SQLite",
+                            "SQL",
+                            "Postgres"
                         ]
                     },
                     {
@@ -525,6 +526,24 @@
                         "score_bias": 0.0,
                         "variants": [
                             "scikit-learn"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.0,
+                        "variants": [
+                            "openpyxl"
+                        ]
+                    },
+                    {
+                        "score_bias": -0.1,
+                        "variants": [
+                            "json"
+                        ]
+                    },
+                    {
+                        "score_bias": -0.1,
+                        "variants": [
+                            "yaml"
                         ]
                     }
                 ]
