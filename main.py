@@ -1,7 +1,7 @@
 from datetime import datetime
 import json
 from creator import create_resume_dict
-from generate_keywords import getKeywords
+from generate_keywords import getKeywords, handle_prompt
 from latex_generator import createLatexDocument
 
 def outResume(resumeOrdered, inputData):
@@ -21,13 +21,15 @@ def outResume(resumeOrdered, inputData):
     
     
 
-def main():
+def runResumeScript(inputData):
 
     # Get
-    inputData = getKeywords()
+    # inputData = getKeywords()
+    print('f')
+    criteria = handle_prompt(inputData)
 
     # Transform Json into scoring json
-    resumeDict = create_resume_dict(inputData['bestkeywords'])
+    resumeDict = create_resume_dict(criteria)
     
     # bestBullets = generateBestBullets(rankedBullets)
     
@@ -38,5 +40,5 @@ def main():
     outResume(resumeDict, inputData)
     
 if __name__ == '__main__':
-    main()
+    runResumeScript()
     pass

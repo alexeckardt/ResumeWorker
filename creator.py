@@ -117,14 +117,14 @@ def generate_best_horizontal_points(hRankings):
             
     return out
 
-def create_resume_dict(keywords):
+def create_resume_dict(criteria):
     
     # Get Data
     with open('fields.json', 'r') as f:
         secData = json.load(f)
         
     # Generate
-    resume = PointList(keywords)
+    resume = PointList(criteria)
     resume.compile(secData)
     
     # Get the Best VBullets

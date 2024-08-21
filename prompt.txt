@@ -1,9 +1,11 @@
-Pretend you are a HR manager incharge of hiring new computer science and software engineering candidates for a Software developer
-positions at your technology firm. 
-To rank the viability of a candidate, you are going to go line by line of each resume's bullet point, 
-using Python's Spacy library. What follows will be a ,
-job description of the position. Based on these requirements, 
-state approximately 10 key words that you would expect to score a high match, using ,
-Spacy, with an interviewable
-candidate's resume. Return results in one line, sepeated by commas. 
-The following is the job descritpion: "%JOBDESC"
+Imagine you are an HR manager hiring a new candidate for a "%POSITIONANME" position at their firm. 
+To rank the viability of a candidate, they are going to go line by line and assign each of the resume's bullet points a score out of 100, 
+based on a set of criteria provided to them.
+
+A score reflects how well any bullet point would relate to the position. The more high scoring points a candidate has on their resume, the more likely 
+that candidate is to recive an interview.
+
+Your job is to write this critera of what you would want to see in a prospective candidate's resume. Imagine if they match very closley with the goal, they will
+be invited for an interview. Respond from a third party perspective.
+
+Based on the job description that is to come, Return a breif overview / checklist that would make a resume appealing to the HR manager. Write it in a paragraph.

@@ -1,0 +1,585 @@
+{
+    "education": {
+        "title": "Education",
+        "$type": "education",
+        "enabled": true,
+        "minimum_to_show": 3,
+        "one_liner": false,
+        "latex_code": "\\resumeSubheading\n{%TITLE}\n{%FROM -- %UNTIL}\n{\\href{%HREF}{%COMPANY}}{%LOCATION}",
+        "subsections": [
+            {
+                "institution": "McMaster University",
+                "degree": "Bachelor of Applied Science in Computer Science (Co-op)",
+                "from": "2021/09/01",
+                "until": "2025/05/01",
+                "gpa": "3.8",
+                "gpaScale": "4.0",
+                "accreditations": "Dean's Honour List",
+                "city": "Hamilton",
+                "state": "ON",
+                "country": "Canada",
+                "score_bias": 1
+            }
+        ]
+    },
+    "work_experience": {
+        "title": "Work Experience",
+        "$type": "work",
+        "enabled": true,
+        "minimum_to_show": 2,
+        "one_liner": false,
+        "latex_code": "\\resumeSubheading\n{%TITLE}\n{%FROM -- %UNTIL}\n{\\href{%HREF}{%COMPANY}}{%LOCATION}",
+        "subsections": [
+            {
+                "title": "Business Intelligence Data Analyst",
+                "company": "Samos Insurance Solutions",
+                "from": "2024/05/01",
+                "until": "2025/09/01",
+                "href": "https://www.samos.com/",
+                "city": "Kitchener",
+                "state": "ON",
+                "country": "Canada",
+                "score_bias": 0.2,
+                "points": [
+                    {
+                        "variants": [
+                            "Implemented several new critical systems for internal Policy Administration System to allow for the onboarding of over \\textbf{50} new client groups."
+                        ],
+                        "score_bias": 0.1
+                    },
+                    {
+                        "variants": [
+                            "Responsible for the creation of Postgres database on \\textbf{AWS}, with the purpose of automating Report Creation for employee and client usage."
+                        ],
+                        "score_bias": 0.1
+                    },
+                    {
+                        "variants": [
+                            "Created over \\textbf{20} RESTful API's using AWS Lambda functions for various administrative tasks."
+                        ],
+                        "score_bias": 0.01
+                    },
+                    {
+                        "variants": [
+                            "Designed and Refactored company website on Framer, which \\textbf{efficiency, landing page for (a lot) of new people views}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Operations Lead",
+                "company": "Orbital Quantum",
+                "from": "2023/05/01",
+                "until": "2023/12/01",
+                "href": "https://www.orbitalquantum.com/",
+                "city": "Toronto",
+                "state": "ON",
+                "country": "Canada",
+                "score_bias": 0,
+                "points": [
+                    {
+                        "score_bias": 0.02,
+                        "variants": [
+                            "Spearheaded and managed software development operations, leading the establishment of 5+ robust back-end\\ systems for the company's applications using \\textbf{Python, Javascript} and \\textbf{Bash}."
+                        ]
+                    },
+                    {
+                        "score_bias": 0.05,
+                        "variants": [
+                            "Designed and implemented intuitive automation tools utilizing full-stack development techniques, streamlining various administrative tasks and leading to \\textbf{50%} increase in administrative productivity."
+                        ]
+                    },
+                    {
+                        "score_bias": 0.05,
+                        "variants": [
+                            "Utilized Artificial Intelligence to expedite patent drafting processes, resulting in a \\textbf{40%} reduction in costs by minimizing the need for lawyer consultations."
+                        ]
+                    },
+                    {
+                        "score_bias": 0.05,
+                        "variants": [
+                            "Modernized and enhanced company web applications to integrate seamlessly with \\textbf{Google Firebase} for advanced user authentication and data management capabilities."
+                        ]
+                    },
+                    {
+                        "variants": [
+                            "Represented the company in the prestigious \\emph{Creative Destruction Lab} program, fostering valuable industry connections and gaining deep insights into cutting-edge technologies, particularly in the realm of quantum sensing."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Junior Software Engineer",
+                "company": "Yarowa (Formerly JAROWA AG)",
+                "from": "2022/06/01",
+                "until": "2022/09/01",
+                "href": "https://www.yarowa.de/schweiz/en/home",
+                "city": "Zug",
+                "state": "Zug",
+                "country": "Switzerland",
+                "score_bias": 0.3,
+                "points": [
+                    {
+                        "score_bias": 0.05,
+                        "variants": [
+                            "Engineered and deployed robust and customizable anonymization algorithms within \\textbf{12} weeks to clean sensitive customer data for machine learning applications."
+                        ]
+                    },
+                    {
+                        "score_bias": 0.01,
+                        "variants": [
+                            "Conducted data pre-processing using \\textbf{Python} and Microsoft \\textbf{Excel} to enhance data quality of over \\textbf{3000} transactions for analysis."
+                        ]
+                    },
+                    {
+                        "score_bias": 0.02,
+                        "variants": [
+                            "Met week-based time frames to have anonymization service's \\textbf{20}+ RESTfull APIs deployed into production.",
+                            "Met week-long sprint-based time frames to have anonymization service's \\textbf{20}+ RESTfull APIs deployed into production."
+                        ]
+                    },
+                    {
+                        "variants": [
+                            "Collaborated within \\textbf{Agile} framework, optimizing for communication, documentation, teamwork and project delivery skills."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Teaching Assistant",
+                "company": "McMaster University",
+                "from": "2023/09/01",
+                "until": "2023/12/01",
+                "href": "https://www.mcmaster.ca/",
+                "city": "Hamilton",
+                "state": "ON",
+                "country": "Canada",
+                "score_bias": 0,
+                "points": [
+                    {
+                        "variants": [
+                            "Assisted in the instruction of courses \\emph{Introduction to Programming} \\textbf{and} \\emph{Binding Algorithm Theory to Practice}."
+                        ]
+                    },
+                    {
+                        "variants": [
+                            "Prepared and conducted weekly tutorials and labs, ensuring students grasped fundamental programming concepts"
+                        ]
+                    },
+                    {
+                        "variants": [
+                            "Managed \\textbf{4} exam logistics and marking of \\textbf{9} assignments."
+                        ]
+                    },
+                    {
+                        "variants": [
+                            "Provided one-on-one support for \\textbf{over 200} students during weekly office hours."
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "title": "Projects",
+        "$type": "projects",
+        "enabled": true,
+        "minimum_to_show": 1,
+        "one_liner": false,
+        "latex_code": "\\resumeProjectHeading\n{\\href{%HREF}{\\underline{\\textbf{%TITLE}}} \n$|$ %DESCRIPTION}\n{%DATE}\n\n%This space needs to be here\n\\resumeProjectDescription{%TOOLS}",
+        "subsections": [
+            {
+                "title": "Waterloo Hybrid Tech",
+                "href": "https://waterloohybridtech.ca",
+                "description": "Online directory of over tech companies in Waterloo Region",
+                "date": "2024/01/01",
+                "tools": "(Beta) Google IDX, Gemini, Firebase, Supabase, Git, HTML, JavaScript",
+                "score_bias": 0,
+                "points": [
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Spearheaded full-stack Development of tool using \\textbf{3} new technologies and software design principles to ensure modularity and extensibility.",
+                            "Spearheaded full-stack Development of tool using \\textbf{3} new AI technologies and software design principles to ensure modularity and extensibility."
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Ensured UX design principles were followed to enhance the overall user experience.",
+                            "Applied UX design principles to significantly improve overall user experience."
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Implemented robust search functionality with \\textbf{19} filtering options, allowing users to find specific companies.",
+                            "Developed robust search functionality featuring \\textbf{19} filtering options, enabling users to efficiently locate specific companies."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Pinball Pioneer",
+                "href": "https://alexeckardt.itch.io/pinball-pioneer",
+                "description": "Indie Video Game Winner of the GMTK 2023 Game Jam",
+                "date": "2024/07/01",
+                "tools": "GMS2, Aseprite, Git, Audacity, Web Design",
+                "score_bias": 0.1,
+                "points": [
+                    {
+                        "score_bias": 0.05,
+                        "variants": [
+                            "Finished \\emph{7th out of 7000} \\textbf{(Top 0.1\\%)} submissions."
+                        ]
+                    },
+                    {
+                        "score_bias": 0.05,
+                        "variants": [
+                            "Solo-developed a puzzle game in entirely within \\textbf{48 hours}."
+                        ]
+                    },
+                    {
+                        "variants": [
+                            "Envisioned, designed, built and tested all game systems, assets and over \\textbf{10} levels."
+                        ]
+                    },
+                    {
+                        "variants": [
+                            "Created captivating web-page to market and highlight game play features for week long voting period."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Soulflame (Alpha)",
+                "href": "https://alexeckardt.itch.io/soulflame-alpha",
+                "description": "Solo-developed Action Adventure Video Game",
+                "date": "Since June 2019",
+                "tools": "GMS2, Digital Art, Git, Social Media",
+                "score_bias": 0,
+                "points": [
+                    {
+                        "score_bias": 0.02,
+                        "variants": [
+                            "Envisioned, designed, built and tested all \\textbf{30+} game systems \\& \\textbf{500+} assets.",
+                            "Envisioned, designed, built and tested all \\textbf{30+} game systems \\& assets.",
+                            "Envisioned, designed, built and tested all \\textbf{30+} game systems."
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Created Social Media (amassed over \\textbf{3000 followers}), and worked with Alpha Testers, to promote and collect feedback.",
+                            "Created Social Media (amassed over \\textbf{3000 followers}), in addition to working with Alpha Testers to promote and collect game feedback."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Titan Quest",
+                "href": "https://3023-titan-city-website.vercel.app/",
+                "description": "Submission for the NASA Space-Apps 2023 hackathon",
+                "date": "2023/10/01",
+                "tools": "Git, React, JavaScript, Video Editing, GML, Audio Editing",
+                "score_bias": 0.1,
+                "points": [
+                    {
+                        "score_bias": 0.05,
+                        "variants": [
+                            "Led a cross-functional team of 6 developers and designers to create and deliver project within a 48 hour deadline."
+                        ]
+                    },
+                    {
+                        "score_bias": 0.05,
+                        "variants": [
+                            "Demonstrated strong leadership by managing project scope and resources, effectively meeting all requirements."
+                        ]
+                    },
+                    {
+                        "score_bias": 0.05,
+                        "variants": [
+                            "Presented features of product to hackathon committee and created a product showcase video."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "GO Transit Visualizer",
+                "href": "https://alexeckardt.github.io/GO-Transit-Visualizer/",
+                "description": "Online Visualization Tool of Ontario's Bus and Train lines.",
+                "date": "2023/06/01",
+                "tools": "HTML, JavaScript, Python, Big Data",
+                "score_bias": 0,
+                "points": [
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Parsed Real World Data using Python to create usable JSON Files for visual map and transit data."
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Used modular design to add touch-screen compatibility."
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "technical_skills": {
+        "title": "Technical Skills",
+        "$type": "skills",
+        "enabled": true,
+        "one_liner": true,
+        "latex_code": "\t\t\\textbf{%SECTION}{: %LIST} \\\\\n",
+        "subsections": [
+            {
+                "title": "Programming Languages",
+                "score_bias": 0,
+                "points": [
+                    {
+                        "score_bias": 0.05,
+                        "variants": [
+                            "Python"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.05,
+                        "variants": [
+                            "JavaScript"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "GML"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.03,
+                        "variants": [
+                            "HTML/CSS"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "\\LaTeX"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Java"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.01,
+                        "variants": [
+                            "C\\#"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.01,
+                        "variants": [
+                            "OpenGL"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "SQL"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "C/C++"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Development Tools",
+                "points": [
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Azure"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "git/Github"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "AWS"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Google Cloud"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Firebase"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Supabase"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Framer"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Docker"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Figma"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Jupyter"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Front End Frameworks",
+                "points": [
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "React"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "MUI"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Bootstrap"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Node.js"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Astro"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "WordPress"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "SwaggerAPI"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Lambda Functions"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Libraries",
+                "points": [
+                    {
+                        "score_bias": 0.3,
+                        "variants": [
+                            "NumPy"
+                        ]
+                    },
+                    {
+                        "score_bias": 0.3,
+                        "variants": [
+                            "Pandas"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "SQLite",
+                            "SQL",
+                            "Postgres"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "Matplotlib"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "NLTK"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "scikit-learn"
+                        ]
+                    },
+                    {
+                        "score_bias": 0,
+                        "variants": [
+                            "openpyxl"
+                        ]
+                    },
+                    {
+                        "score_bias": -0.1,
+                        "variants": [
+                            "json"
+                        ]
+                    },
+                    {
+                        "score_bias": -0.1,
+                        "variants": [
+                            "yaml"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
